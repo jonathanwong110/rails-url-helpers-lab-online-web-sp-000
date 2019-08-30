@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
     
     if @student.active
       "This student is currently active"
+      @student.save
     else
       "This student is currently inactive"
     end
